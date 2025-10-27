@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tambah Data Siswa</title>
+</head>
+<body>
+    <h2>Tambah Data Siswa</h2>
+    <form action="koneksi.php" method="POST">
+        <label>Nama Siswa:</label><br>
+        <input type="text" name="nama_siswa" required><br><br>
+
+        <label>Jenis Kelamin:</label><br>
+        <select name="jenis_kelamin" required>
+            <option value="L">Laki-laki</option>
+            <option value="P">Perempuan</option>
+        </select><br><br>
+
+        <label>No HP:</label><br>
+        <input type="text" name="no_hp"><br><br>
+
+        <label>Alamat:</label><br>
+        <textarea name="alamat"></textarea><br><br>
+
+        <input type="submit" value="Simpan">
+    </form>
+</body>
+</html>
