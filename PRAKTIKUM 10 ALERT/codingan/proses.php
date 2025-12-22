@@ -39,12 +39,12 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'hugotegal@gmail.com';
-    $mail->Password   = 'kxrk upmw appk anog'; // APP PASSWORD
+    $mail->Username   = '***********';
+    $mail->Password   = '**********'; // APP PASSWORD
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
-    $mail->setFrom('hugotegal@gmail.com', 'Mail Alert System');
+    $mail->setFrom('***********', 'Mail Alert System');
     $mail->addAddress($email);
 
     $mail->isHTML(true);
@@ -71,4 +71,5 @@ if ($simpan) {
 } else {
     echo "<script>alert('Email terkirim tapi data gagal disimpan');window.location='index.php';</script>";
 }
+
 ?>
